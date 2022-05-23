@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
+import RunEntryList from './components/RunEntryList';
+import Header from './components/Header';
 
-function App() {
+export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  );
+    <main className="h-screen bg-gradient-to-b from-gray-500 to-gray-800">
+      <Header />
+      <RunEntryList />
+    </main>
+  )
 }
-
-export default App;
